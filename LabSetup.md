@@ -7,5 +7,5 @@ I will not go into detail about setting up AD as I have a project solely for tha
 4. In this lab, I created 2 users and the one which was attacked was Terry Smith, with the username of tsmith
 - <img width="188" height="43" alt="image" src="https://github.com/user-attachments/assets/26f30cb6-158a-42c6-98af-7ea7f8ebb12e" />
 ## Windows domain joined client
-
+I joined this client via the about page in settings and "Rename this PC (advanced)"
     
