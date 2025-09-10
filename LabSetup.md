@@ -43,6 +43,7 @@ I will not go into detail about setting up AD as I have a project solely for tha
 1. Log in to the server via the web using its ip address with the port 8000.
 2. Select settings > indexes and create an index called 'endpoint' so that the logs can be sucessfully forwarded to it.
 3. Next enable the splunk server to receive data via settings > forwarding and recieving, under receive data > configure recieving > new recieving port and add the default port of 9997, then save. Now you can see data coming in from the client machine. <img width="639" height="127" alt="image" src="https://github.com/user-attachments/assets/623877d8-50a7-4d9c-a7f7-61afcd35155a" /> <img width="584" height="100" alt="image" src="https://github.com/user-attachments/assets/7b8dbea2-225a-41b3-9852-5de8b80f2d5b" />
+## Ubuntu machine setup
 
  
 
