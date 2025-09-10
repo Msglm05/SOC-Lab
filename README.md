@@ -1,6 +1,8 @@
 # SOC-Lab
 Walkthrough of my Active Directory lab with Splunk log collection and brute force detection.
 The purpose of this lab was to gain hands on experience within the security field of IT, particularly carrying out attacks on my AD joined target machine and analysing them in a Splunk server.
+## Important note❗
+All of the Virtual Machines should be on the same network so that they can communicate with other. To do this, I created a NAT Network on Virtualbox with the Network IP of 192.168.10.0, I then appklied this to all the Machines involved.
 ## Tools used 
 1. Windows Server (DC) (Sysmon and Splunk Universal Forwarder was also installed on this machine)
 2. Windows client target machiene (Domain joined) (Sysmon and Splunk Universal Forwarder was also installed on this machine))
