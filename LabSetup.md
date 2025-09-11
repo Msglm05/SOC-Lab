@@ -44,7 +44,14 @@ I will not go into detail about setting up AD as I have a project solely for tha
 2. Select settings > indexes and create an index called 'endpoint' so that the logs can be sucessfully forwarded to it.
 3. Next enable the splunk server to receive data via settings > forwarding and recieving, under receive data > configure recieving > new recieving port and add the default port of 9997, then save. Now you can see data coming in from the client machine. <img width="639" height="127" alt="image" src="https://github.com/user-attachments/assets/623877d8-50a7-4d9c-a7f7-61afcd35155a" /> <img width="584" height="100" alt="image" src="https://github.com/user-attachments/assets/7b8dbea2-225a-41b3-9852-5de8b80f2d5b" />
 ## Ubuntu machine setup
+🔔 I had trouble with the Kali Linux machine with regard to the xfreerdp command, the which xfreerdp command returned 'no command found' and the version that was installed was freerdp3-x11. The crowbar command was not able to sucessfully execute so I decided to pivot to a Ubuntu machine.
+1. Create the VM and configure it
+2. To change the ethernet settings, the small bar in the top right is clicked > network symbol, then click the arrow > wired settings > under the wired section click the settings gear on the right > locate IPv4 > manual, then set the desired IP.
+<img width="725" height="411" alt="image" src="https://github.com/user-attachments/assets/de301296-f05e-45d4-85d8-67ea81912f3f" />
 
+3. Once it has been set, open up the terminal and run ip a, to veirfy that the settings have been applied.
+4. For the brute force, I installed xfreerdp2-x11 and crowbar through the terminal. To install crowbar, run **sudo apt update** to update the repositories then **sudo apt install freerdp2-x11**
+5. I then cloned the crowbar from github via the command **git clone https://github.com/galkan/crowbar.git** and then made it system wide via 
  
 
 
