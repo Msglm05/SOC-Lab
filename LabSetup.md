@@ -49,9 +49,9 @@ I will not go into detail about setting up AD as I have a project solely for tha
 2. To change the ethernet settings, the small bar in the top right is clicked > network symbol, then click the arrow > wired settings > under the wired section click the settings gear on the right > locate IPv4 > manual, then set the desired IP.
 <img width="725" height="411" alt="image" src="https://github.com/user-attachments/assets/de301296-f05e-45d4-85d8-67ea81912f3f" />
 
-3. Once it has been set, open up the terminal and run ip a, to veirfy that the settings have been applied.
+3. Once it has been set, open up the terminal and run ip a, to veirfy that the settings have been applied, you can additionaly ping any website to see if you have connectivity and can ping by domain names to see DNS is working, make sure your DC is on at this point❗
 4. For the brute force, I installed xfreerdp2-x11 and crowbar through the terminal. To install crowbar, run **sudo apt update** to update the repositories then **sudo apt install freerdp2-x11**
-5. I then cloned the crowbar from github via the command **git clone https://github.com/galkan/crowbar.git** and then made it system wide via 
+5. I then cloned the crowbar from github via the command **git clone https://github.com/galkan/crowbar.git** and then made it system wide so that I can run it from any place in the terminal. I believe I sysmliked it with this command sudo ln -s ~/crowbar/crowbar.py /usr/local/bin/crowbar.
  
 
 
