@@ -39,6 +39,9 @@ I will not go into detail about setting up AD as I have a project solely for tha
 <img width="496" height="317" alt="image" src="https://github.com/user-attachments/assets/fae77052-743d-4e8f-ba3b-f22f335acb4b" />
 
 8. Go to services and locate the splunk forwarder service, notice here the log on as option and change to local system account to ensure permissions will not affect the logs. Then restart the service as whenever the inputs.conf file is changed, the service has to be restarted.
+9. **Lastly** it is important to configure the RDP service so that the account that is going to be attacked can access RDP on that computer. Typinf 'This PC' in the search bar, right clicking and selecting properties > Advanced system settings > click on the remote tab and enable 'Allow remote connections to this computer' > then select add users and add the user that is going to be attacked.
+<img width="784" height="341" alt="image" src="https://github.com/user-attachments/assets/0911def1-a9f0-433a-b59c-d1e1eb98fb1c" />
+
 ## Configuring the Splunk Enterprise server 
 1. Log in to the server via the web using its ip address with the port 8000.
 2. Select settings > indexes and create an index called 'endpoint' so that the logs can be sucessfully forwarded to it.
