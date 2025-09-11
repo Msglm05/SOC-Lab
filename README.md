@@ -17,4 +17,6 @@ All of the Virtual Machines should be on the same network so that they can commu
 2. Failed logins generate Event ID 4625 whereas a successfull login generated 4624
 3. Sysmon and Universal forwarder work together for detailed logs to be sent to the Splunk server
 4. Splunk can detect Brute Force via a simple query
+5. The MITRE framework is a knowledge base of adversary behaviour (privellege escalation, exfilltration etc) and the techniques attackers can use to achieve them. Each technique has an ID code associated to it and overall it is very useful tool to gain insight!
+6. Atomic red team can be downloaded on your system and can be used to carry out simulation attacks in which you can see if the attack got through and hence produced logs which can also be helpful to identify types of attacks. 
    
