@@ -30,7 +30,7 @@ I will not go into detail about setting up AD as I have a project solely for tha
 2. Set my desired staic IP of 192.168.10.100, Default gateway of 192.168.10.1 and DNS of 8.8.8.8 at first which then later chnaged to the DC's IP.
 <img width="390" height="455" alt="image" src="https://github.com/user-attachments/assets/13777ab0-a7ac-45ad-8ae1-c74756df2719" />
 
-3. Splunk universal forwarder was installed via splunk.com, once installed run the installer and select the option an on premises Splunk Enterprise Instance.
+3. Splunk universal forwarder was installed via splunk.com, once installed run the installer and select the option "on premises" Splunk Enterprise Instance.
 4. For the receiving indexer, this is the splunk server so put in its IP address with the default port of 9997 when recieving events. Once installed click finish.
 5. Sysmon was also installed alongside Olafs config under his github account, locate sysmonconfig.xml > raw > right click save as.
 6. Extract the installed sysmon folder, click on the file path and copy, then go to powershell with administrative privellegs and change into the filepath. Install the ./Sysmon64.exe, using the -i option to specify the config file, click enter and the installation would begin once agree is hit.
