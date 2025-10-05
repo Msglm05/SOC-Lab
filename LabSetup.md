@@ -1,7 +1,7 @@
 # Lab Setup Overview 
 ## Splunk Server
 1. I installed Splunk server from Ubuntu's site and created a VM for it in VirtualBox
-2. To update and upgrade its repositories, I ran the command sudo apt-get update && sudo apt0get upgrade
+2. To update and upgrade its repositories, I ran the command sudo apt-get update && sudo aptget upgrade
 3. To change the IP to my desired one I configured its settings using sudo nano /etc/netplan/50-cloud-init.yaml
 <img width="285" height="197" alt="image" src="https://github.com/user-attachments/assets/54c984d8-42eb-4422-9fc3-91a9fc81becb" />
 
