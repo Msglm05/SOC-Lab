@@ -9,7 +9,7 @@
 6. On my host machiene, I went to splunk.com and installed Splunk Enterprise and installed the Linux .deb file and placed it in a desired folder.
 7. To enable folder sharing, sudo apt-get install virtualbox-guest-additions-iso was installed along with guest-utils
 8. On VirtualBox > Devices > Shared Folders > Shared Folder Settings > folder picture with + sign to add the folder in which splunk Enterprise was installed, I selected the options read only, auto mount and make permanent.
-9. Rebooted the server and used the command sudo adduser <username> vboxsf to add the user to the vboxsf group.
+9. Rebooted the server and used the command sudo adduser (username) vboxsf to add the user to the vboxsf group.
 10. Created a new directory called share and mounted the shared file onto the this directory with the command, sudo mount -t vboxsf -o uid=1000,gid-1000 (name of the shared folder) share.
 11. Changed directory into share in which the Splunk Enterprise installer was located and installed it using sudo dpkg -i splunk...(till the end).
 Changed into the directory of where splunk was located under /opt/splunk and changed into the user splunk along with changing into the bin directory and ran ./splunk start to run the installer.
