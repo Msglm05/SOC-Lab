@@ -24,8 +24,7 @@ I will not go into detail about setting up AD as I have a project solely for tha
 4. After it has installed, you would click "Promote this server to a Domain Controller" and this is where you can configure a new forest and enter details such as your domain name.
 5. After you have configured, you can then press install in which after your machine would reboot, you would then have a Domain Controller configured where you can create users, Organisational groups etc via Active Directory Users and Computers.
 6. In this lab, I created 2 users and the one which was attacked was Terry Smith, with the username of tsmith
-7. 
-- <img width="188" height="43" alt="image" src="https://github.com/user-attachments/assets/26f30cb6-158a-42c6-98af-7ea7f8ebb12e" />
+   <img width="188" height="43" alt="image" src="https://github.com/user-attachments/assets/26f30cb6-158a-42c6-98af-7ea7f8ebb12e" />
 ## Windows domain joined client
 1. Changed the PC name to Target-PC for easier log identification.
 2. Set my desired staic IP of 192.168.10.100, Default gateway of 192.168.10.1 and DNS of 8.8.8.8 at first which then later chnaged to the DC's IP.
